@@ -11,7 +11,7 @@ import { AuthContext } from '../auth/AuthContext';
 import API_URL from "../config";
 import { PlayersContext } from './global/PlayersContext';
 import { OwnersContext } from './global/OwnersContext';
-import API_URL from "../config";
+
 
 
 
