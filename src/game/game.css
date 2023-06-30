@@ -1,0 +1,63 @@
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+
+  }
+  
+  
+  .logo-game-page {
+    grid-column:  span 2;
+    width: 100px;
+    height: auto;
+  }
+
+  /* .space {
+    grid-column:  span 2;
+    grid-row: span 1;
+  } */
+
+  .Board{
+    grid-column:  span 2;
+    grid-row: span 2;
+  }
+
+  .table{
+    grid-column:  span 1;
+    grid-row: span 2;
+  }
+
+  .dice{
+    grid-column:  span 1;
+    grid-row: span 1;
+  }
+/*   
+  .content {
+    display: flex;
+    flex-direction: column;
+  } */
+/*   
+  .board-container {
+
+  }
+  
+  .player-table-container {
+    order: -1;
+  } */
+/*   
+  .additional-component {
+    order: 2;
+  } */
+  
+  /* @media (max-width: 768px) {
+    .game {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr auto;
+    }
+  
+    .content {
+      flex-direction: column-reverse;
+    }
+  }
+   */

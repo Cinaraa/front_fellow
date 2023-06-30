@@ -1,0 +1,37 @@
+.game-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .game-info {
+    margin-bottom: 10px;
+  }
+  
+  .game-id,
+  .player-count,
+  .game-status {
+    margin-bottom: 5px;
+  }
+  
+  .enter-game-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .enter-game-button:hover {
+    background-color: #45a049;
+  }
+  

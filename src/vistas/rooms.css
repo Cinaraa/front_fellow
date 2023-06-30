@@ -1,0 +1,17 @@
+/* Styling for the data card component */
+.data-card {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .data-card h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .data-card p {
+    font-size: 14px;
+    color: #333;
+  }
+  
