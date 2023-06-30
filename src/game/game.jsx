@@ -1,7 +1,7 @@
 import './game.css';
 import {useState } from "react";
 import Board from './board';
-// import Logo from '../../public/assets/imgs/logo.png';
+import Logo from '../../public/assets/imgs/logo.png';
 import PlayerTable from './playerTable';
 import axios from 'axios';
 import { AuthContext } from '../auth/AuthContext';
@@ -34,7 +34,7 @@ function Game() {
   return (
     <div className="game">
       <div className="logo-game-page">
-        {/* <img src={Logo} alt="Logo" /> */}
+        <img src={Logo} alt="Logo" />
         </div>
       <div className='space'></div>
       <div className="Board">
