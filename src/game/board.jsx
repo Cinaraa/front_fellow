@@ -1,52 +1,55 @@
+
 import './board.css';
+/* eslint-disable react/prop-types */
 import Cell from './cell';
 
-
-const Board = () => {
+function Board ({ boxesData, addhouse}) {
+  const boxes = boxesData;
+  const handleClickCell = (box) => {
+    addhouse(box)
+  };
   return (
-    <div className="board">
-      <Cell id={16} name="16" price="price" />
-      <Cell id={17} name="17" price="price" />
-      <Cell id={18} name="18" price="price" />
-      <Cell id={19} name="19" price="price" />
-      <Cell id={20} name="20" price="price" />
-      <Cell id={21} name="21" price="price" />
-      <Cell id={22} name="22" price="price" />
-      <Cell id={23} name="23" price="price" />
-      <Cell id={24} name="24" price="price" />
-      <Cell id={25} name="25" price="price" />
+    <>
+      <Cell boxe={ boxes[15]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[16]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[17]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[18]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[19]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[20]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[21]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[22]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[23]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[24]} addhouse={handleClickCell}/>
+
+      <Cell boxe={ boxes[14]} addhouse={handleClickCell} />
+
+      <Cell boxe={ boxes[25]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[13]} addhouse={handleClickCell}/>
 
 
-      <Cell id={15} name="15" price="price" />
-      <div className="center-cell">      
-      </div>
-      <Cell id={26} name="26" price="price" />
-      <Cell id={14} name="14" price="price" />
-      
-      <Cell id={27} name="27" price="price" />
-      <Cell id={13} name="13" price="price" />
+      <Cell boxe={ boxes[26]} addhouse={handleClickCell} />
+      <Cell boxe={ boxes[12]} addhouse={handleClickCell}/>
 
-      <Cell id={28} name="28" price="price" />
-      <Cell id={12} name="12" price="price" />
+      <Cell boxe={ boxes[27]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[11]} addhouse={handleClickCell}/>
 
-      <Cell id={29} name="29" price="price" />
-      <Cell id={11} name="11" price="price" />
+      <Cell boxe={ boxes[28]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[10]} addhouse={handleClickCell}/>
 
-      <Cell id={30} name="30" price="price" />
-      <Cell id={10} name="10" price="price" />
-      <Cell id={9} name="9" price="price" />
-      <Cell id={8} name="8" price="price" />
-      <Cell id={7} name="7" price="price" />
-      <Cell id={6} name="6" price="price" />
-      <Cell id={5} name="5" price="price" />
-      <Cell id={4} name="4" price="price" />
+      <Cell boxe={ boxes[29]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[9]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[8]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[7]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[6]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[5]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[4]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[3]} addhouse={handleClickCell}/>
 
-      <Cell id={3} name="3" price="price" />
-      <Cell id={2} name="2" price="price" />
-      <Cell id={1} name="1" price="price" />
-      
-      </div>
+      <Cell boxe={ boxes[2]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[1]} addhouse={handleClickCell}/>
+      <Cell boxe={ boxes[0]} addhouse={handleClickCell}/>
+      </>
   );
-};
-
+}
 export default Board;
+

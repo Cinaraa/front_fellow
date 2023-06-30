@@ -1,6 +1,6 @@
 import './principal.css'
 import NavBar from '../common/navbar';
-import Logo from '../../public/assets/imgs/logo.png'
+import Logo from '../../public/imgs/logo.png'
 
 //import { SessionContext } from './user/usercontext';
 function Principal() {
