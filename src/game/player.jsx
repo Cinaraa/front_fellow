@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import './playerTable.css';
 import PlayerRed from '../../public/imgs/rojo.png'
-import PlayerGreen from '../../public/imgs/Verde.png'
-import PlayerBlue from '../../public/imgs/Azul.png'
-import PlayerYellow from '../../public/imgs/Amarillo.png'
+import PlayerGreen from '../../public/imgs/verde.png'
+import PlayerBlue from '../../public/imgs/azul.png'
+import PlayerYellow from '../../public/imgs/amarillo.png'
 import { useState } from 'react';
 
 function Player ({ playerData }){
