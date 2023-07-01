@@ -168,7 +168,7 @@ function Partida ( ){
     const AddOrDecrease = async (box) => {
         if (canRollDice){
           axios({ method: 'post',
-               url: `${API_URL}/turn/endturn`,
+               url: `${API_URL}/buy/house`,
                headers: {
                 'Authorization': `Bearer ${token}`
                },
